@@ -5,13 +5,20 @@ var schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    email: {
+    quantity: {
         type: String,
         required: true,
         unique: true
     },
-    gender: String,
-    phone: String
+    
+    // price: {
+    //     type: String,
+    //     required: true,
+    //     unique: true
+    // },
+    price: String,
+    
+    category: String
 })
 const Userdb = mongoose.model('userdb', schema);
 module.exports = Userdb;

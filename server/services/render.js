@@ -20,12 +20,3 @@ exports.update_user = (req, res) => {
             res.send(err);
         })
 }
-exports.delete_user = (req, res) => {
-    axios.delete(`http://localhost:3000/api/users/${req.params.id}`)
-        .then(function() {
-            res.redirect('/');
-        })
-        .catch(err => {
-            res.send(err);
-        });
-};

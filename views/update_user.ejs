@@ -3,12 +3,12 @@
         <div class="container">
             <div class="box-nav d-flex justify-between">
                 <div class="filter">
-                    <a href="/"><i class="fas fa-angle-double-left"></i>All Customers</a>
+                    <a href="/"><i class="fas fa-angle-double-left"></i>All Toys</a>
                 </div>
             </div>
             <div class="form-title text-center">
-                <h2 class="text-dark">Update Customer</h2>
-                <span class="text-light">Customer the below form to Update an account</span>
+                <h2 class="text-dark">Update Toy</h2>
+                <span class="text-light">Toy the below form to Update an account</span>
             </div>
 
             <form method="POST" id="update_user">
@@ -20,26 +20,33 @@
                         <input type="text" name="name" value="<%= user.name %>" placeholder="Enter Name">
                     </div>
                     <div class="form-group">
-                        <label for="Email" class="text-light">Email</label>
-                        <input type="text" name="email" value="<%= user.email%>" placeholder="example@gmail.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="gender" class="text-light">Gender</label>
-                        <div class="radio inline">
-                            <input type="radio" id="radio-2" name="gender" value="Male" <%= user.gender=='Male' ? 'checked' : '' %>>
-                            <label for="radio-2" class="radio-label">Male</label>
-                        </div>
-                        <div class="radio inline">
-                            <input type="radio" id="radio-3" name="gender" value="Female" <%= user.gender=='Female' ? 'checked' : '' %> >
-                            <label for="radio-3" class="radio-label">Female</label>
-                        </div>
+                        <label for="Quantity" class="text-light">Quantity</label>
+                        <input type="text" name="quantity" value="<%= user.quantity %>" placeholder="example: 2">
                     </div>
 
                     <div class="form-group">
-                        <label for="phone" class="text-light">Phone</label>
-                        <input type="hidden" name="phone" value="<%= user._id %>">
-                        <input type="text" name="phone" value="<%= user.phone %>" placeholder="PhoneNumber">
+                        <label for="price" class="text-light">Price</label>
+                        <input type="hidden" name="price" value="<%= user._id %>">
+                        <input type="text" name="price" value="<%= user.price %>" placeholder="Enter Price">
                     </div>
+
+                    <div class="form-group">
+                        <label for="category" class="text-light">Category</label>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-2" name="category" value="Car" <%= user.category=='Car' ? 'checked' : '' %>>
+                            <label for="radio-2" class="radio-label">Car</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-3" name="category" value="Doll" <%= user.category=='Doll' ? 'checked' : '' %> >
+                            <label for="radio-3" class="radio-label">Doll</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" id="radio-4" name="category" value="Plane" <%= user.category=='Plane' ? 'checked' : '' %> >
+                            <label for="radio-4" class="radio-label">Plane</label>
+                        </div>
+                    </div>
+
+                    
                     </div>
                     <div class="form-group ">
                         <button type="submit " class="btn text-dark update ">Save</button>
