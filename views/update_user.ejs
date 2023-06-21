@@ -7,8 +7,8 @@
                 </div>
             </div>
             <div class="form-title text-center">
-                <h2 class="text-dark">Update Toy</h2>
-                <span class="text-light">Toy the below form to Update an account</span>
+                <h2 class="text-dark">Update Toy<i class="fa-solid fa-wrench fa-beat" style="color: #0e0a50;"></i></h2>
+                <span class="text-light">Updating toy</span>
             </div>
 
             <form method="POST" id="update_user">
@@ -17,11 +17,11 @@
                         
                         <label for="name" class="text-light">Name</label>
                         <input type="hidden" name="id" value="<%= user._id %>">
-                        <input type="text" name="name" value="<%= user.name %>" placeholder="Enter Name">
+                        <input type="text" name="name" value="<%= user.name %>" placeholder="Enter name of toy">
                     </div>
                     <div class="form-group">
                         <label for="Quantity" class="text-light">Quantity</label>
-                        <input type="text" name="quantity" value="<%= user.quantity %>" placeholder="example: 2">
+                        <input type="text" name="quantity" value="<%= user.quantity %>" placeholder="example: 200">
                     </div>
 
                     <div class="form-group">
@@ -31,18 +31,18 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="category" class="text-light">Category</label>
+                        <label for="category" class="text-light">Age limit</label>
                         <div class="radio inline">
-                            <input type="radio" id="radio-2" name="category" value="Car" <%= user.category=='Car' ? 'checked' : '' %>>
-                            <label for="radio-2" class="radio-label">Car</label>
+                            <input type="radio" id="radio-2" name="category" value="Under 3 Years" <%= user.category=='Under 3 Years' ? 'checked' : '' %>>
+                            <label for="radio-2" class="radio-label">Under 3 Years</label>
                         </div>
                         <div class="radio inline">
-                            <input type="radio" id="radio-3" name="category" value="Doll" <%= user.category=='Doll' ? 'checked' : '' %> >
-                            <label for="radio-3" class="radio-label">Doll</label>
+                            <input type="radio" id="radio-3" name="category" value="Under 10 Years" <%= user.category=='Under 10 Years' ? 'checked' : '' %> >
+                            <label for="radio-3" class="radio-label">Under 10 Years</label>
                         </div>
                         <div class="radio inline">
-                            <input type="radio" id="radio-4" name="category" value="Plane" <%= user.category=='Plane' ? 'checked' : '' %> >
-                            <label for="radio-4" class="radio-label">Plane</label>
+                            <input type="radio" id="radio-4" name="category" value="No Age Limit" <%= user.category=='No Age Limit' ? 'checked' : '' %> >
+                            <label for="radio-4" class="radio-label">No Age Limit</label>
                         </div>
                     </div>
 

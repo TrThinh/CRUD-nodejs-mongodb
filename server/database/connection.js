@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb+srv://hieu:16032003@cluster0.ygb3ujg.mongodb.net/?retryWrites=true&w=majority';
+const url = 'mongodb+srv://Cloud:asm2602@cluster0.67cn8ix.mongodb.net/?retryWrites=true&w=majority';
 
 
 module.exports = {

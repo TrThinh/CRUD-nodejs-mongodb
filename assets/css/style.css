@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Courier+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
 :root {
-    --dark: #2b2d42;
-    --light: #adb5bd;
-    --border: #dee2e6;
-    --boder-btn: #edf2f4;
+    --dark: #1e1e23;
+    --light: #1b1b1c;
+    --border: #0f1922;
+    --boder-btn: #171414;
+}
+
+body {
+    background-color: #bcedff;
 }
 
 * {
@@ -12,13 +16,9 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #dde8e7;
-}
-
 a {
     text-decoration: none;
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Cursive', Cursive;
 }
 
 .container {
@@ -50,8 +50,7 @@ a {
 }
 
 .text-dark {
-    /* color: var(--dark); */
-    color: #fff;
+    color: var(--dark);
 }
 
 .inline {
@@ -63,25 +62,28 @@ a {
 }
 
 .tex-gradient {
-    background: linear-gradient(to right, rgb(10, 239, 197), rgb(10, 239, 197));
+    background: linear-gradient(to right, #1e78ff, #2633eb);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #header nav {
-    background-color: rgb(10, 239, 197);
+    background-color: #1e78ff;
     padding: 1em 0;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 25px;
 }
 
 #site-main {
     margin-top: 6em;
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 #site-main .container .box-nav>a {
-    background-color: aqua;
+    background-color: #17bdff;
     font-size: 1em;
     padding: .5em 1em;
     border-radius: 15px;
@@ -92,8 +94,12 @@ a {
 }
 
 table {
+    background-color: #0051cc;
     border-spacing: 0px;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
 }
 
 .table td,
@@ -111,17 +117,19 @@ table {
 }
 
 .table tr:hover {
-    background-color: rgb(10, 239, 197);
+    background-color: #17bdff;
+    border-radius: 25px;
 }
 
 .table tr:hover td>a {
     box-shadow: none;
+    border-radius: 25px;
 }
 
 .table .thead-dark th {
-    color: #fff;
+    color: #17bdff;
     background-color: var(--dark);
-    border-color: #32383e;
+    border-color: #080808;
 }
 
 @media only screen and(max-width:1024px) {
@@ -172,7 +180,7 @@ table {
     padding: .6em 1em;
     margin: .5em 0;
     border: 1px solid var(--border);
-    font-family: 'Courier New,' sans-serif;
+    font-family: 'Barlow,' sans-serif;
     font-size: 1em;
     border-radius: .2em;
 }
@@ -205,13 +213,13 @@ table {
 }
 
 .radio input[type='radio']:checked+.radio-label:before {
-    background-color: rgb(10, 239, 197);
+    background-color: #1e78ff;
     box-shadow: inset 0 0 0 4px #e9ecef;
 }
 
 .radio input[type='radio']:focus+.radio-label:before {
     outline: none;
-    border-color: rgb(10, 239, 197);
+    border-color: #1e78ff;
 }
 
 .radio input[type='radio']:disabled+.radio-label:before {
@@ -224,9 +232,9 @@ table {
 #add_user .form-group .btn {
     width: 100%;
     padding: .9em 1em;
-    background-color: rgb(10, 239, 197);
+    background-color: #1e78ff;
     border: none;
-    font-family: 'Courier New', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1em;
     cursor: pointer;
     border-radius: .2em;
