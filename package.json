@@ -23,14 +23,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  },
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nguyendoanminhhieu/cloud.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nguyendoanminhhieu/cloud/issues"
-  },
-  "homepage": "https://github.com/nguyendoanminhhieu/cloud#readme"
+  }
+  
 }

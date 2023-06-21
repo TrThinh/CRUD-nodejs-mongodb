@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb+srv://hieundm:16032003@cluster0.cpfwvvz.mongodb.net/?retryWrites=true&w=majority';
+const url = 'mongodb+srv://hieu:16032003@cluster0.ygb3ujg.mongodb.net/?retryWrites=true&w=majority';
 
 
 module.exports = {
@@ -24,8 +24,8 @@ const connectDB = async() => {
     try {
         //mongodb connection string
         const con = await mongoose.connect(process.env.MONGO_URL, {
-            //  useCreateIndex: true,
-            //useFindAndModify: false,
+            // useCreateIndex: true,
+            // useFindAndModify: false,
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })

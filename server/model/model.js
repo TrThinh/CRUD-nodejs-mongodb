@@ -11,12 +11,12 @@ var schema = new mongoose.Schema({
         unique: true
     },
     
-    // price: {
-    //     type: String,
-    //     required: true,
-    //     unique: true
-    // },
-    price: String,
+    price: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    // price: String,
     
     category: String
 })
