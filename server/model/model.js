@@ -6,15 +6,11 @@ var schema = new mongoose.Schema({
         required: true
     },
     quantity: {
-        type: String,
-        required: true,
-        unique: true
+        type: String
     },
     
     price: {
-        type: String,
-        required: true,
-        unique: true
+        type: String
     },
     // price: String,
     
